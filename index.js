@@ -174,7 +174,7 @@ const checkWinning = (rows, bet, lines) => {
 const allSame = (arr) => arr.every(value => value === arr[0]);
 
 
-const slotMachine = () => {
+(function() {
     let balance = addBalance();
 
     while (true) {
@@ -199,6 +199,4 @@ const slotMachine = () => {
 
         if (playAgain != "y") break;
     }
-}
-
-slotMachine();
+})();
